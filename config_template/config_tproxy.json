@@ -66,75 +66,7 @@
     { "tag": "🔯 香港自动", "type": "urltest", "outbounds": ["{all}"], "filter": [{ "action": "include", "keywords": ["🇭🇰|HK|hk|香港|港|HongKong"] }], "url": "http://www.gstatic.com/generate_204", "interval": "10m", "tolerance": 50 },
     { "tag": "♻️ 自动选择", "type": "urltest", "outbounds": ["{all}"], "filter": [{ "action": "exclude", "keywords": ["网站|地址|剩余|过期|时间|有效"] }], "url": "http://www.gstatic.com/generate_204", "interval": "10m", "tolerance": 50 },
     { "tag": "GLOBAL", "type": "selector", "outbounds": ["{all}"]},
-    { "tag": "🎯 全球直连", "type": "direct" },
-    
-    {
-      "type": "hysteria2",
-      "tag": "🇭🇰 香港01",
-      "server": "hk1.dxf123.pp.ua",
-      "server_port": 38138,
-      "password": "27cf6ee9-64e3-49f0-e714-477a0e317bc3",
-      "tls": {
-        "enabled": true,
-        "server_name": "hk1.dxf123.pp.ua",
-        "insecure": false
-      }
-    },
-    
-    {
-      "type": "hysteria2",
-      "tag": "🇭🇰 香港02",
-      "server": "hk.mfk.pp.ua",
-      "server_port": 45790,
-      "password": "3fae7a1f-ba2f-426a-91b6-84ba7d409ea5",
-      "tls": {
-        "enabled": true,
-        "server_name": "hk.mfk.pp.ua",
-        "insecure": false
-      }
-    },
-    
-    {
-      "type": "hysteria2",
-      "tag": "🇯🇵 日本01",
-      "server": "138.2.51.201",
-      "server_port": 20030,
-      "password": "mfk3245482",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.bing.com",
-        "insecure": true
-      }
-    },
-    
-    {
-      "type": "hysteria2",
-      "tag": "🇯🇵 日本02",
-      "server": "140.83.54.59",
-      "server_port": 35035,
-      "password": "mfk3245482",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.bing.com",
-        "insecure": true
-      }
-    },
-    
-    {
-      "type": "vmess",
-      "tag": "🇺🇸 美国01",
-      "server": "mxr2023.eu.org",
-      "server_port": 2086,
-      "uuid": "56217d36-aaff-4002-9dfb-e8cf080e7fbc",
-      "security": "auto",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "mxr2023.eu.org"
-        }
-      }
-    }
+    { "tag": "🎯 全球直连", "type": "direct" }
   ],
   
   "route": {
